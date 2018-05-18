@@ -30,6 +30,7 @@ h1 {
      /* font-family: 'Tangerine', cursive; */
      font-family: 'Julius Sans One', sans-serif;
      font-size: 18px;
+     font-weight: lighter;
      text-align: right;
      margin: 0px 5px 5px auto;
      padding-right: 15px;
@@ -114,7 +115,6 @@ i {
 .caption {
      font-family: 'Julius Sans One', sans-serif;
      font-size: 14px;
-     font-weight: lighter;
      text-align: center;
      vertical-align: middle;
      margin: auto;
