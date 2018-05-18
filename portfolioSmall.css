@@ -91,19 +91,35 @@ i {
      grid-area: "container";
      display: grid;
      grid-template-columns: repeat(4,1fr);
+     grid-auto-rows: minmax(100px, auto);
      grid-column-gap: 5px;
      grid-row-gap: 5px;
-     position: relative;
      z-index: 1;
 }
 
-img {
-     max-width: 100%;
-}
-main {
-     display: inline-grid: ;
-     grid-template-columns: repeat(2,1fr);
 
+.section {
+     display: block;
+     position: relative;
+     grid-column: 2/5;
+}
+
+.preview {
+     max-width: 90%;
+     grid-column-start: 2;
+     grid-column-end: 5;
+     border: 1px solid gray;
+}
+
+.caption {
+     font-family: 'Julius Sans One', sans-serif;
+     font-size: 14px;
+     font-weight: lighter;
+     text-align: center;
+     vertical-align: middle;
+     margin: auto;
+     grid-column-start: 1;
+     grid-column-end: 2;
 }
 
 /* Footer Elements */
