@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 
 /* Header Elements */
@@ -42,7 +42,7 @@ body {
      font-size: 40px;
      font-weight: lighter;
      margin: auto;
-     padding-top: 10px;
+     margin-bottom: 0px;
 }
 
 .subject {
@@ -118,6 +118,7 @@ i {
      grid-area: "container";
      display: grid;
      margin-top: 100px;
+     margin-right: 5px;
      grid-template-columns: repeat(6,1fr);
      grid-auto-rows: minmax(100px, auto);
      grid-column-gap: 5px;
@@ -127,7 +128,7 @@ i {
 
 
 .section {
-     display: block;
+     /* display: block; */
      position: relative;
      grid-column: 3/7;
 }
