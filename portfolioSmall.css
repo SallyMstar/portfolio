@@ -12,18 +12,33 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     background-image: linear-gradient(bisque, 20%, orange);
+    background-attachment: fixed;
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
 
 /* Header Elements */
-h1 {
+#topper {
+     display: grid;
+     grid-area: "topper";
+     grid-template-columns: repeat(5,1fr);
+     position: fixed;
+     background-image: linear-gradient(bisque, 20%, orange);
+     background-attachment: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     border-bottom: 1px solid black;
+     z-index: 2;
+}
+
+.name {
      font-family: 'Great Vibes', cursive;
-     text-align: center;
+     grid-column: 1/6;
      font-size: 40px;
      font-weight: lighter;
-     margin: 5px auto 0px auto;
-     padding-top: 5px;
+     margin: auto;
+     padding-top: 8px;
 }
 
 .subject {
@@ -32,8 +47,9 @@ h1 {
      font-size: 18px;
      font-weight: lighter;
      text-align: right;
-     margin: 0px 5px 5px auto;
+     margin: 0px 15px 5px auto;
      padding-right: 15px;
+     grid-column: 3/6;
 }
 /* Navigation elements */
 nav {
@@ -43,16 +59,21 @@ nav {
 
 i {
      font-size: 28px;
+     grid-column: 1/2;
+     margin-left: 8px;
+     color: navy;
 }
 
 #takeOut {
      margin-top: -25px;
-     float: left;
+     position: fixed;
+     top: 75px;
 }
 #menu {
      width: 300px;
-     margin-top: auto;
-     z-index: 2;
+     margin-top: 80px;
+     position: fixed;
+     z-index: 3;
 }
 #menu li {
      list-style-image: none;
@@ -91,7 +112,8 @@ i {
 #container {
      grid-area: "container";
      display: grid;
-     grid-template-columns: repeat(4,1fr);
+     margin-top: 100px;
+     grid-template-columns: repeat(6,1fr);
      grid-auto-rows: minmax(100px, auto);
      grid-column-gap: 5px;
      grid-row-gap: 5px;
@@ -102,13 +124,11 @@ i {
 .section {
      display: block;
      position: relative;
-     grid-column: 2/5;
+     grid-column: 3/7;
 }
 
 .preview {
      max-width: 90%;
-     grid-column-start: 2;
-     grid-column-end: 5;
      border: 1px solid gray;
 }
 
@@ -119,7 +139,7 @@ i {
      vertical-align: middle;
      margin: auto;
      grid-column-start: 1;
-     grid-column-end: 2;
+     grid-column-end: 3;
 }
 
 /* Footer Elements */
