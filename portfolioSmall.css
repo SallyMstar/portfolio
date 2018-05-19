@@ -26,13 +26,7 @@ body {
      position: fixed;
      background-image: linear-gradient(bisque, 20%, orange);
      background-attachment: fixed;
-<<<<<<< HEAD
      background-size: contain;
-||||||| merged common ancestors
-     background-repeat: no-repeat;
-=======
-     /* background-repeat: no-repeat; */
->>>>>>> 5f4e55b9329af2f7e4069ff10e4e3993daf4d4a2
      overflow: hidden;
      width: 100%;
      top: 0;
