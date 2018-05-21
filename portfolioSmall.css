@@ -24,7 +24,7 @@ body {
      grid-area: "topper";
      grid-template-columns: repeat(5,1fr);
      position: fixed;
-     background-image: linear-gradient(orange, bisque 7%, orange 20%);
+     background-image: linear-gradient(orange, bisque 50px, orange 120px);
      background-attachment: fixed;
      background-size: contain;
      overflow: hidden;
