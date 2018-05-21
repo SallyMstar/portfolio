@@ -28,7 +28,6 @@ $(document).ready(function() {
      $(option1).mouseout(function(option) {
           $(option1).css('background-color','navy');
      })
-
      // Rollover effect for menu option 2
      $(option2).hover(function(option){
           $(option2).css('background-color','mediumblue');
@@ -63,5 +62,16 @@ $(document).ready(function() {
      })
      $(option6).mouseout(function(option) {
           $(option6).css('background-color','navy');
+     })
+     // Menu selection action
+     $(option2).click(function() {
+          $('#sites').show("slow");
+          // Hide the menu upon selection
+          drawer.classList.toggle('closed');
+     })
+     $(option1).click(function() {
+          $('#sites').hide("slow");
+          // Hide the menu upon selection
+          drawer.classList.toggle('closed');
      })
 })
