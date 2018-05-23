@@ -11,47 +11,76 @@ body {
                           "foot";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    background-image: linear-gradient(bisque, 20%, orange);
-    width: 100%;
+    background-image: linear-gradient(bisque, orange);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    max-width: 100%;
     height: 100%;
 }
 
 /* Header Elements */
-h1 {
+#topper {
+     display: grid;
+     grid-area: "topper";
+     grid-template-columns: repeat(5,1fr);
+     position: fixed;
+     background-image: linear-gradient(orange, bisque 50px, orange 120px);
+     background-attachment: fixed;
+     background-size: contain;
+     overflow: hidden;
+     width: 100%;
+     height: 100px;
+     top: 0;
+     left: 0;
+     border-bottom: 1px solid black;
+     z-index: 2;
+}
+
+#container {
+     margin-top: 95px;
+}
+
+.name {
      font-family: 'Great Vibes', cursive;
-     text-align: center;
-     font-size: 38px;
+     grid-column: 1/6;
+     font-size: 40px;
      font-weight: lighter;
-     margin: 5px auto 0px auto;
-     padding-top: 5px;
+     margin: auto;
+     margin-bottom: 0px;
 }
 
 .subject {
      /* font-family: 'Tangerine', cursive; */
      font-family: 'Julius Sans One', sans-serif;
      font-size: 18px;
+     font-weight: lighter;
      text-align: right;
-     margin: 0px 5px 5px auto;
+     margin: 0px 15px 5px auto;
      padding-right: 15px;
+     grid-column: 3/6;
 }
 /* Navigation elements */
 nav {
      max-width: 100%;
+     max-height: 100%;
      min-width: 58px;
 }
 
 i {
      font-size: 28px;
+     grid-column: 1/2;
+     margin-left: 8px;
 }
 
 #takeOut {
-     margin-top: -25px;
-     float: left;
+     grid-row: 2/3;
+     grid-column: 1/2;
 }
 #menu {
      width: 300px;
-     margin-top: auto;
-     z-index: 2;
+     margin-top: 80px;
+     position: fixed;
+     z-index: 3;
 }
 #menu li {
      list-style-image: none;
@@ -87,23 +116,101 @@ i {
 }
 
 /* Body Elements */
-#container {
+#bio {
      grid-area: "container";
      display: grid;
-     grid-template-columns: repeat(4,1fr);
+     margin-right: 5px;
+     grid-template-columns: repeat(6,1fr);
+     grid-auto-rows: auto;
      grid-column-gap: 5px;
      grid-row-gap: 5px;
-     position: relative;
      z-index: 1;
 }
 
-img {
-     max-width: 100%;
+#projects {
+     grid-area: "container";
+     display: grid;
+     margin-right: 5px;
+     grid-template-columns: repeat(6,1fr);
+     grid-auto-rows: auto;
+     grid-column-gap: 5px;
+     grid-row-gap: 5px;
+     z-index: 1;
 }
-main {
-     display: inline-grid: ;
-     grid-template-columns: repeat(2,1fr);
 
+#sites {
+     grid-area: "container";
+     display: grid;
+     margin-right: 5px;
+     grid-template-columns: repeat(6,1fr);
+     grid-auto-rows: auto;
+     grid-column-gap: 5px;
+     grid-row-gap: 5px;
+     z-index: 1;
+}
+#skills {
+     grid-area: "container";
+     display: grid;
+     margin-right: 5px;
+     grid-template-columns: repeat(6,1fr);
+     grid-auto-rows: auto;
+     grid-column-gap: 5px;
+     grid-row-gap: 5px;
+     z-index: 1;
+}
+#mindset {
+     grid-area: "container";
+     display: grid;
+     margin-right: 5px;
+     grid-template-columns: repeat(6,1fr);
+     grid-auto-rows: auto;
+     grid-column-gap: 5px;
+     grid-row-gap: 5px;
+     z-index: 1;
+}
+#contact {
+     grid-area: "container";
+     display: grid;
+     margin-right: 5px;
+     grid-template-columns: repeat(6,1fr);
+     grid-auto-rows: auto;
+     grid-column-gap: 5px;
+     grid-row-gap: 5px;
+     z-index: 1;
 }
 
+.segment {
+     text-align: center;
+     font-family: 'Julius Sans One', sans-serif;
+     font-size: 22px;
+     margin: -1px auto auto auto;
+     padding-top: 10px;
+     padding-bottom: 5px;
+     width: 95%;
+     color: bisque;
+     border: 1px solid black;
+     border-radius:50px;
+     background-color: navy;
+     grid-column: 1/7;
+}
+
+.caption {
+     font-family: 'Julius Sans One', sans-serif;
+     font-size: 14px;
+     text-align: center;
+     vertical-align: middle;
+     margin: auto;
+     padding: 3px;
+     grid-column: 1/3;
+}
+
+.section {
+     position: relative;
+     grid-column: 3/7;
+}
+
+.preview {
+     max-width: 90%;
+     border: 1px solid gray;
+}
 /* Footer Elements */
