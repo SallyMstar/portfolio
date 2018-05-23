@@ -23,7 +23,7 @@ body {
      grid-area: "topper";
      grid-template-columns: repeat(5,1fr);
      position: fixed;
-     background-image: linear-gradient(#a4a4a5, #eaeaef 45px, #a4a4a5 100px);
+     background-image: linear-gradient(#cbcbed, #eaeaef 35px, #cbcbed 100px);
      background-attachment: fixed;
      background-size: contain;
      overflow: hidden;
