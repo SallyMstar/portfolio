@@ -13,7 +13,7 @@ bars.addEventListener('click', function() {
 });
 
 // Menu option variables
-let option1 = document.getElementById('option1');
+let aboutMe = document.getElementById('option1');
 let option2 = document.getElementById('option2');
 let option3 = document.getElementById('option3');
 let option4 = document.getElementById('option4');
@@ -63,14 +63,70 @@ $(document).ready(function() {
      $(option6).mouseout(function(option) {
           $(option6).css('background-color','navy');
      })
-     // Menu selection action
+// Menu selection action
+     $(option1).click(function() {
+     // When home is clicked, show all
+     $('#bio').show("slow");
+     $('#projects').show("slow");
+     $('#sites').show("slow");
+     $('#skills').show("slow");
+     $('#contact').show("slow");
+     // Hide the menu upon selection
+     drawer.classList.toggle('closed');
+     })
      $(option2).click(function() {
-          $('#sites').show("slow");
+          // show the selected
+          $('#bio').show("slow");
+          // Hide all others
+          $('#projects').hide("slow");
+          $('#sites').hide("slow");
+          $('#skills').hide("slow");
+          $('#contact').hide("slow");
           // Hide the menu upon selection
           drawer.classList.toggle('closed');
      })
-     $(option1).click(function() {
+     $(option3).click(function() {
+          // show the selected
+          $('#projects').show("slow");
+          // Hide all others
+          $('#bio').hide("slow");
           $('#sites').hide("slow");
+          $('#skills').hide("slow");
+          $('#contact').hide("slow");
+          // Hide the menu upon selection
+          drawer.classList.toggle('closed');
+     })
+     $(option4).click(function() {
+          // show the selected
+          $('#sites').show("slow");
+          // Hide all others
+          $('#bio').hide("slow");
+          $('#projects').hide("slow");
+          $('#skills').hide("slow");
+          $('#contact').hide("slow");
+          // Hide the menu upon selection
+          drawer.classList.toggle('closed');
+     })
+     $(option5).click(function() {
+          // show the selected
+          $('#skills').show("slow");
+          // Hide all others
+          $('#bio').hide("slow");
+          $('#projects').hide("slow");
+          $('#sites').hide("slow");
+          $('#contact').hide("slow");
+          // Hide the menu upon selection
+          drawer.classList.toggle('closed');
+     })
+     $(option6).click(function() {
+          // show the selected
+          $('#contact').show("slow");
+          // Hide all others
+          $('#bio').hide("slow");
+          $('#projects').hide("slow");
+          $('#sites').hide("slow");
+          $('#skills').hide("slow");
+          $('#home').hide("slow");
           // Hide the menu upon selection
           drawer.classList.toggle('closed');
      })
