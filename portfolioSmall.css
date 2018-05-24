@@ -9,7 +9,6 @@ body {
     display: grid;
     grid-template-areas: "topper"
                           "container"
-                          "foot";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     background-color: #fffffc;
@@ -249,4 +248,3 @@ i {
      max-width: 90%;
      border: 1px solid gray;
 }
-/* Footer Elements */
