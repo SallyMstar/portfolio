@@ -120,9 +120,6 @@ i {
      display: grid;
      margin-right: 5px;
      grid-template-columns: 1fr;
-     /* grid-auto-rows: auto;
-     grid-column-gap: 5px;
-     grid-row-gap: 5px; */
      z-index: 1;
 }
 
@@ -206,9 +203,23 @@ i {
      margin-right: 5px;
      grid-template-columns: 1fr;
      grid-auto-rows: auto;
-     grid-column-gap: 5px;
      grid-row-gap: 5px;
+     vertical-align: middle;
      z-index: 1;
+}
+
+#contact img {
+     margin-top: 20px;
+     margin-bottom: -5px;
+}
+.connect {
+     display: block;
+     margin: 20px auto 25px auto;
+     font-family: 'Pompiere', cursive;
+     font-size: 40px;
+     text-decoration: none;
+     font-weight: bold;
+     text-align: center;
 }
 
 .segment {
