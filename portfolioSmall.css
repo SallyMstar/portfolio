@@ -127,7 +127,6 @@ i {
 }
 
 #bio img {
-     /* grid-column: 2/6; */
      max-width: 40%;
      min-width: 100px;
      border: 1px solid gray;
@@ -139,7 +138,6 @@ i {
      font-family: 'Pompiere', cursive;
      font-size: 32px;
      margin: 5px;
-     vertical-align: top;
      text-align: center;
 }
 
