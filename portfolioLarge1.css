@@ -1,0 +1,18 @@
+@media screen and (min-width: 900px) {
+    body {
+         background-color: navy;
+    }
+    #container {
+         max-width: 850px;
+         padding: 10px;
+         margin: 95px auto auto auto;
+         background-color: #fffffc;
+    }
+    #bio {
+         max-width: 800px;
+         margin: auto;
+    }
+    .profileInfo {
+         font-size: 22px;
+    }
+}

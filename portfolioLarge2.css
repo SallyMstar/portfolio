@@ -1,0 +1,56 @@
+@media screen and (min-width: 1100px) {
+    #container {
+         padding: 10px;
+         max-width: 900px;
+         margin: 95px 5px auto 190px;
+         background-color: #fffffc;
+    }
+    #takeOut {
+         display: none;
+    }
+    #menu {
+         margin-top: 67px;
+         position: absolute;
+         position: fixed;
+         z-index: 3;
+    }
+    #menu li {
+         font-size: 16px;
+         max-width: 190px;
+         visibility: visible;
+         box-shadow: none;
+    }
+    .open {
+         position: absolute;
+         /* This trasform moves the drawer onto canvas. */
+         -webkit-transform: translate(0px, 0);
+         transform: translate(0px, 0);
+         /* Optionally, we animate the drawer. */
+         transition: transform 0.3s ease;
+    }
+    .closed {
+         position: absolute;
+         /* This trasform moves the drawer off canvas. */
+         -webkit-transform: translate(0px, 0);
+         transform: translate(0px, 0);
+         /* Optionally, we animate the drawer. */
+         transition: transform 0.3s ease;
+    }
+    .name {
+         font-size: 50px;
+         margin: 10px auto -10px auto;
+    }
+    .subject {
+         font-size: 20px;
+
+    }
+    .caption {
+         font-size: 22px;
+           margin: auto;
+           grid-column: 1/4;
+    }
+    .section {
+         text-align: right;
+         grid-column: 4/7;
+    }
+}

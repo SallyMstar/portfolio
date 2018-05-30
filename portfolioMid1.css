@@ -1,0 +1,8 @@
+@media screen and (min-width: 600px) {
+   .profileInfo {
+         font-size: 20px;
+   }
+      .list1, .list2, .list3, .caption {
+          font-size: 18px;
+      }
+}
