@@ -127,15 +127,14 @@ i {
      max-width: 40%;
      min-width: 100px;
      border: 1px solid gray;
-     margin: 5px;
+     margin: 5px 5px 5px 10px;
      float: right;
 }
 
 .profileInfo {
-     font-family: 'Pompiere', cursive;
-     font-size: 32px;
+     font-size: 22px;
      margin: 5px;
-     text-align: center;
+     text-align: justify;
 }
 
 #projects {
