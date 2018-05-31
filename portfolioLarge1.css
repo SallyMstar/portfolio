@@ -5,7 +5,7 @@
     #container {
          max-width: 850px;
          padding: 10px;
-         margin: 95px auto auto auto;
+         margin: 85px auto auto auto;
          background-color: #fffffc;
     }
     #bio {
@@ -15,4 +15,27 @@
     .profileInfo {
          font-size: 22px;
     }
+
+    .section {
+         text-align: center;
+         margin: 15px;
+         grid-column: span 2;
+         grid-row: span 4;
+         padding: 10px;
+         border-radius: 5px;
+         box-shadow: 0px 5px 15px;
+         background-color: #fffffc;
+    }
+
+    .caption {
+           margin: 10px;
+           grid-column: span 2;
+           grid-row: span 3;
+    }
+
+    .preview {
+         max-height: 300px;
+         max-width: 100%;
+    }
+
 }

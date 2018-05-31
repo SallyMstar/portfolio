@@ -2,8 +2,8 @@
     #container {
          padding: 10px;
          max-width: 900px;
-         margin: 95px 5px auto 190px;
-         background-color: #fffffc;
+         margin: 85px 5px auto 190px;
+         background-color: #eeeeef;
     }
     #takeOut {
          display: none;
@@ -40,17 +40,34 @@
          font-size: 50px;
          margin: 10px auto -10px auto;
     }
+
     .subject {
          font-size: 20px;
+    }
 
-    }
-    .caption {
-         font-size: 22px;
-           margin: auto;
-           grid-column: 1/4;
-    }
+     .segment {
+          margin: 5px auto;
+     }
+
     .section {
-         text-align: right;
-         grid-column: 4/7;
+         text-align: center;
+         margin: 15px;
+         grid-column: span 2;
+         grid-row: span 4;
+         padding: 10px;
+         border-radius: 5px;
+         box-shadow: 0px 5px 15px;
+         background-color: #fffffc;
+    }
+
+    .caption {
+           margin: 10px;
+           grid-column: span 2;
+           grid-row: span 3;
+    }
+
+    .preview {
+         max-height: 300px;
+         max-width: 100%;
     }
 }
