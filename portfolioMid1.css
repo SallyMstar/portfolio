@@ -9,7 +9,7 @@
           .section {
                text-align: center;
                margin: 15px;
-               grid-column: span 2;
+               grid-column: span 3;
                grid-row: span 4;
                padding: 10px;
                border-radius: 5px;
@@ -20,7 +20,7 @@
           .caption {
                  font-size: 16px;
                  margin: 10px;
-                 grid-column: span 2;
+                 grid-column: span 3;
                  grid-row: span 3;
           }
 
@@ -29,5 +29,5 @@
                max-width: 100%;
           }
 
-      
+
 }
