@@ -139,6 +139,13 @@ i {
      text-align: justify;
 }
 
+.profileExpanded {
+     font-size: 18px;
+     margin: 5px;
+     text-align: justify;
+     display: none;
+}
+
 #projects {
      grid-area: "container";
      display: grid;

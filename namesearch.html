@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>New Project Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- Add Google font styles   -->
+         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+     <!-- Add Stylesheets for respnsive breakpoints   -->
+         <link rel="stylesheet" href="portfolioSmall.css">
+         <link rel="stylesheet" media="screen and (min-width: 600px)" href="portfolioMid1.css">
+         <link rel="stylesheet" media="screen and (min-width: 750px)" href="portfolioMid2.css">
+         <link rel="stylesheet" media="screen and (min-width: 900px)" href="portfolioLarge1.css">
+         <link rel="stylesheet" media="screen and (min-width: 1100px)" href="portfolioLarge2.css">
+</head>
+<body>
+     <header>
+          <div id="topper">
+               <h1 class="name">Morningstar Technology</h1>
+               <h2 class="subject">Domain Name Search</h2>
+<!-- hamburger bars for menu access -->
+               <i class="fas fa-bars" id="takeOut"></i>
+          </div>
+          <nav>
+<!-- main menu options grid area 'topper'-->
+               <div id="menu" class="closed">
+                    <ul>
+                         <li id="option1">Home</li>
+                         <li id="option2">About Me</li>
+                         <li id="option3">Project Portfolio</li>
+                         <li id="option4">Website Samples</li>
+                         <li id="option5">Skillset</li>
+                         <li id="option6">Contact Me</li>
+                         <li id="option7" href = "http://www.registryrocket.com/default.asp?ec=F0A524A8-C03B-4049-A3E1-0">Domain Registration</li>
+                    </ul>
+               </div>
+     </nav>
+     </header>
+     <script>
+     $(window).onload(function(){
+$.get("resellertest.enom.com/interface.asp?command=PORTAL_GETTOKEN&UID=ResellID&PW=resellpw&PortalUserID=uniqueUserLoginID&email=user@example.com&ResponseType=html"),
+     function(data) {
+          console.log(data);
+     };
+});
+     </script>
+     <div id="tldportal-root"></div>
+     <script src='http://tldportal.com/api/embed?token=7SX6NILVUF4Z74PBJ3LOXOLAQ6BRLG6I2ERQC6X5' type="text/javascript">
+     </script>
+     <!-- JavaScript/jQuery source links -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="portfolio.js"></script>
+</body>
+</html>

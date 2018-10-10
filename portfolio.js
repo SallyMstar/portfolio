@@ -18,6 +18,8 @@ let option2 = document.getElementById('option2');
 let option3 = document.getElementById('option3');
 let option4 = document.getElementById('option4');
 let option5 = document.getElementById('option5');
+let option6 = document.getElementById('option6');
+let option7 = document.getElementById('option7');
 
 // Rollover effects for menu
 $(document).ready(function() {
@@ -62,6 +64,13 @@ $(document).ready(function() {
      })
      $(option6).mouseout(function(option) {
           $(option6).css('background-color','navy');
+     })
+     // Rollover effect for menu option 7
+     $(option7).hover(function(option){
+          $(option7).css('background-color','mediumblue');
+     })
+     $(option7).mouseout(function(option) {
+          $(option7).css('background-color','navy');
      })
 // Menu selection action
      $(option1).click(function() {
@@ -122,6 +131,19 @@ $(document).ready(function() {
           // show the selected
           $('#contact').show("slow");
           // Hide all others
+          $('#bio').hide("slow");
+          $('#projects').hide("slow");
+          $('#sites').hide("slow");
+          $('#skills').hide("slow");
+          $('#home').hide("slow");
+          // Hide the menu upon selection
+          drawer.classList.toggle('closed');
+     })
+     $(option7).click(function() {
+          // show the selected
+          // links to registry rocket
+          // Hide all others
+          $('#contact').hide("slow");
           $('#bio').hide("slow");
           $('#projects').hide("slow");
           $('#sites').hide("slow");
