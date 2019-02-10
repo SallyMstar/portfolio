@@ -5,114 +5,37 @@
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <link rel="manifest" href="/site.webmanifest">
+<!-- Add Google font styles   -->
      <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Quicks" rel="stylesheet">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-     <link rel="stylesheet" href="portfolioSmall.css">
-     <style>
-         @media screen and (min-width: 600px) {
-               .list1, .list2, .list3, .caption {
-                    font-size: 18px;
-               }
-         }
-         @media screen and (min-width: 750px) {
-              .preview {
-                   max-width: 400px;
-              }
-              .list1 {
-                   grid-column: 1/3;
-                   grid-row: auto;
-              }
-              .list2 {
-                   grid-column: 3/5;
-                   grid-row: auto;
-              }
-              .list3 {
-                   grid-column: 5/7;
-                   grid-row: auto;
-                   margin: auto;
-              }
-         }
-         @media screen and (min-width: 900px) {
-              body {
-                   background-color: navy;
-              }
-              #container {
-                   max-width: 850px;
-                   padding: 10px;
-                   margin: 95px auto auto auto;
-                   background-color: #fffffc;
-              }
-         }
-         @media screen and (min-width: 1100px) {
-              #container {
-                   padding: 10px;
-                   max-width: 900px;
-                   margin: 95px 5px auto 190px;
-                   background-color: #fffffc;
-              }
-              #takeOut {
-                   display: none;
-              }
-              #menu {
-                   margin-top: 67px;
-                   position: absolute;
-                   position: fixed;
-                   z-index: 3;
-              }
-              #menu li {
-                   font-size: 16px;
-                   max-width: 190px;
-                   visibility: visible;
-                   box-shadow: none;
-              }
-              .open {
-                   position: absolute;
-                   /* This trasform moves the drawer onto canvas. */
-                   -webkit-transform: translate(0px, 0);
-                   transform: translate(0px, 0);
-                   /* Optionally, we animate the drawer. */
-                   transition: transform 0.3s ease;
-              }
-              .closed {
-                   position: absolute;
-                   /* This trasform moves the drawer off canvas. */
-                   -webkit-transform: translate(0px, 0);
-                   transform: translate(0px, 0);
-                   /* Optionally, we animate the drawer. */
-                   transition: transform 0.3s ease;
-              }
-              .name {
-                   font-size: 50px;
-                   margin: 10px auto -10px auto;
-              }
-              .subject {
-                   font-size: 20px;
-
-              }
-              .caption {
-                   font-size: 22px;
-                    margin: auto;
-                    grid-column: 1/4;
-              }
-              .section {
-                   text-align: right;
-                   grid-column: 4/7;
-              }
-         }
-     </style>
+     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<!-- Add link for hamburger menu icon  -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!-- Add Stylesheets for respnsive breakpoints   -->
+     <link rel="stylesheet" href="./css/portfolioSmall.css">
+     <link rel="stylesheet" media="screen and (min-width: 600px)" href="./css/portfolioMid1.css">
+     <link rel="stylesheet" media="screen and (min-width: 750px)" href="./css/portfolioMid2.css">
+     <link rel="stylesheet" media="screen and (min-width: 900px)" href="./css/portfolioLarge1.css">
+     <link rel="stylesheet" media="screen and (min-width: 1100px)" href="./css/portfolioLarge2.css">
 </head>
 <body>
+<!-- Header content  -->
      <header>
           <div id="topper">
                <h1 class="name">Sally Morningstar</h1>
                <h2 class="subject">Web Developer</h2>
+<!-- hamburger bars for menu access -->
                <i class="fas fa-bars" id="takeOut"></i>
           </div>
           <nav>
+<!-- main menu options grid area 'topper'-->
                <div id="menu" class="closed">
                     <ul>
                          <li id="option1">Home</li>
@@ -121,85 +44,155 @@
                          <li id="option4">Website Samples</li>
                          <li id="option5">Skillset</li>
                          <li id="option6">Contact Me</li>
+                         <!-- <li id="option7" href = "http://www.registryrocket.com/default.asp?ec=F0A524A8-C03B-4049-A3E1-0">Domain Registration</li> -->
                     </ul>
                </div>
      </nav>
      </header>
+
+<!-- Main body content & grid area 'container' -->
 <div id="container">
+
+<!-- Personal info -->
      <div id="bio">
           <h1 class="segment">About Me</h1>
           <span class="profileInfo">
-               <img src="profilePic.jpeg" alt="Sally Morningstar profile picture">
-          <br/>&emsp;I love creating things of beauty in both form and function.  I also love technology, so
-          they naturally come together for me in web development!
+               <img class = "profilePic" src="img/profilePic.jpeg" alt="Sally Morningstar profile picture">
+          <p>
+               &emsp;&emsp;I am forever grateful to Google and Udacity for the opportunities they have provided, giving me
+               the encouragement and the confidence in my own abilities to be successful in the world of web development.
+          </p>
+          <p>&emsp;&emsp;Years ago, I started learning development and programming skills through self-study on a
+               need-to-know basis helping friends with tech issues and small projects.
+               A little knowledge, however, was not enough to satisfy my curiosity! I soon found myself enveloped in the
+               library's computer section with programming books scattered around, buying more books, and seeking out online tutorials.
+               <a href="img/FEND_Certificate.png" target="blank">
+               <img class="certificate" src="img/FEND_Certificate.png" alt="Udacity Front End Web Dev Certificate">
+               </a>
+               Over time, I started taking on paid freelance work and even building full websites with databases and content management systems.
+          </p>
+          <p>In 2017, I happened upon an advertisement for a scholarship competition from Google, so I
+               decided to give it a shot.  I got in!  Not only did I get in, but I also finished in the top 10% of all the scholars nationwide!
+          </p>
+          <p>
+               I love web development and continue learning every day.  I can't wait to see what we can create together!
+
      </span>
-     </div>
+</div>
+
+<!-- project portfolio -->
      <div id="projects">
           <h1 class="segment">Project Portfolio</h1>
-          <h3 class="caption">Animal Trading Card design utilizing HTML5 and CSS3</h3>
-          <div class="section">
-               <a href="https://rawgit.com/SallyMstar/AnimalTradingCard/master/card.html">
-                    <img class="preview" src="tradingCard.png" alt="Trading Card to illustrate design elements using CSS3">
-               </a>
-          </div>
-                    <h3 class="caption">Interactive one-page web app featuring HTML5, CSS3, JavaScript, & jQuery</h3>
                <div class="section">
-                    <a href="https://rawgit.com/SallyMstar/Udacity-Pixel-Art-Project/pixelPaint/index.html">
-                         <img class="preview" src="pixelPaint.png" alt="Interactive one-page web app pixel painter">
+                    <h3 class="caption">Single-page React App, with 3rd party API & GoogleMaps Integration</h3>
+                         <h4>(CORS browser plugin required)</h4>
+                    <a href="http://morningstar.technology/petconnect/build" target="blank">
+                         <img class="preview" src="img/petfinder.png" alt="Single-page REACT App with API and map integration">
                     </a>
                </div>
+               <div class="section">
+                    <h3 class="caption">Single-page React App, React Router, cache, & API Integration<br>-Book Reading Tracker-<br>Sandbox live example</h3>
+                    <a href="https://codesandbox.io/embed/3vpw33r14m?hidenavigation=1&view=preview" target="blank">
+                         <img class="preview" src="img/bookmobile.png" alt="Single-page REACT App example with React Router and API integration - Sandbox Run">
+                    </a>
+               </div>
+               <div class="section">
+                    <h3 class="caption">Interactive card-matching Memory Game utilizing HTML5, CSS, JavaScript / ES6, & jQuery</h3>
+                    <a href="https://sallymstar.github.io/Card-Match_Memory_Game" target="blank">
+                         <img class="preview" src="img/memory_game.png" alt="Interactive one-page web app card-matching memory game">
+                    </a>
+               </div>
+               <div class="section">
+                    <h3 class="caption">Interactive one-page web app featuring HTML5, CSS3, JavaScript, & jQuery</h3>
+                    <a href="https://rawgit.com/SallyMstar/Udacity-Pixel-Art-Project/pixelPaint/index.html" target="blank">
+                         <img class="preview" src="img/pixelPaint.png" alt="Interactive one-page web app pixel painter">
+                    </a>
+               </div>
+               <div class="section">
+                    <h3 class="caption">Interactive arcade game clone</h3>
+                    <a href="https://cdn.rawgit.com/SallyMstar/jaywalker/wip/index.html" target="blank">
+                         <img class="preview" src="img/jaywalker.png" alt="Playable clone of Frogger arcade game">
+                    </a>
+               </div>
+
      </div>
+
+<!-- website portfolio examples -->
      <div id="sites">
           <h1 class="segment">Website Samples</h1>
-                    <h3 class="caption">Responsive web design live example</h3>
                <div class="section">
-                    <a href="https://rawgit.com/SallyMstar/hometown/r2/index.html">
-                         <img class="preview" src="Brighton.png" alt="The Brighton Times responsive web design">
+                    <h3 class="caption">Map API integration, CSS, JavaScript, Offline Cache, & Responsive Grid Layout</h3>
+                    <a href="https://sallymstar.github.io/dining-diva/" target="blank">
+                         <img class="preview" src="img/restaurantReviews.png" alt="Restaurant reviews with map integration and responsive web design">
                     </a>
-               </div>
-                    <h3 class="caption">Advanced site featuring grid layout, PHP/MySQL content databases, HTML, CSS, and JavaScript.</h3>
+                    <h3 class="caption">Collaborative site UI/UX by Sally</h3>
+<!--                     <h4 id="item1"><em>more...</em></h4>
+ -->               </div>
                <div class="section">
-                    <a href="https://www.dropbox.com/s/qlimrtdo5xfikbs/IMG_0618.JPG?raw=1">
-                         <img class="preview" src="https://www.dropbox.com/s/qlimrtdo5xfikbs/IMG_0618.JPG?raw=1" alt="Public Info Page for CCCWPB">
+                    <h3 class="caption">Small business web presence utilizing CSS, JavaScript with transitions, & Responsive Grid Layout</h3>
+                    <a href="img/houseOfCrafts.png" target="blank">
+                         <img class="preview" src="img/houseOfCrafts.png" alt="Basic website for small business, My House of Crafts">
                     </a>
+<!--                     <h4 id="item2"><em>more...</em></h4>
+ -->               </div>
+               <div class="section">
+                    <h3 class="caption">Church site featuring grid layout, PHP/MySQL CMS, HTML, CSS, and JavaScript.</h3>
+                    <a href="img/cccwpbVisitorPage.JPG" target="blank">
+                         <img class="preview" src="img/cccwpbVisitorPage.JPG" alt="Public Info Page for CCCWPB">
+                    </a>
+                    <h4 id="item3">
+                         <em>show/hide more</em>
+                    </h4>
                </div>
+
+
+
+<!--                hidden segments for additional views  -->
+
+<!-- --------------- Site 1 -------------- -->
+ 
+<!-- --------------- Site 2 -------------- -->
+
+<!-- --------------- Site 3 -------------- -->
+               <div class="section3">
                     <h3 class="caption">Tiered access pages for public, private, and site administration areas</h3>
-               <div class="section">
-                    <a href="https://www.dropbox.com/s/tgi8wb9ihw5jzlb/IMG_0617.JPG?raw=1">
-                         <img class="preview" src="https://www.dropbox.com/s/tgi8wb9ihw5jzlb/IMG_0617.JPG?raw=1" alt="Members-only Access for CCCWPB">
+                    <a href="img/cccwpbMemberPage.JPG" target="blank">
+                         <img class="preview" src="img/cccwpbMemberPage.JPG" alt="Members-only Access for CCCWPB">
                     </a>
                </div>
+               <div class="section3">
                     <h3 class="caption">Ministry Groups</h3>
-               <div class="section">
-                    <a href="https://www.dropbox.com/s/a0wywd7gvrtbd01/IMG_0619.JPG?raw=1">
-                         <img class="preview" src="https://www.dropbox.com/s/a0wywd7gvrtbd01/IMG_0619.JPG?raw=1" alt="Kids' Corner youth group page">
+                    <a href="img/cccwpbYouthPage.JPG" target="blank">
+                         <img class="preview" src="img/cccwpbYouthPage.JPG" alt="Kids' Corner youth group page">
                     </a>
                </div>
+               <div class="section3">
                     <h3 class="caption">Dynamic Calendar</h3>
-               <div class="section">
-                    <a href="https://www.dropbox.com/s/6ffddallzmpis6c/IMG_0620.JPG?raw=1">
-                         <img class="preview" src="https://www.dropbox.com/s/6ffddallzmpis6c/IMG_0620.JPG?raw=1" alt="Dynamic calendar page">
+                    <a href="img/cccwpbCalendarPage.JPG" target="blank">
+                         <img class="preview" src="img/cccwpbCalendarPage.JPG" alt="Dynamic calendar page">
                     </a>
                </div>
+               <div class="section3">
+                    <h3 class="caption">Administrative options and site update options with no programming knowledge required</h3>
+                    <a href="img/cccwpbAdminPage.JPG" target="blank">
+                         <img class="preview" src="img/cccwpbAdminPage.JPG" alt="Administrative access page">
+                    </a>
+               </div>
+               <div class="section3">
                     <h3 class="caption">Members can update their own directory information or add themselves with an invitation code.</h3>
-               <div class="section">
-                    <a href="https://www.dropbox.com/s/si9on3jz2hwp9dc/IMG_0622.JPG?raw=1">
-                         <img class="preview" src="https://www.dropbox.com/s/si9on3jz2hwp9dc/IMG_0622.JPG?raw=1" alt="Self-service directory update form">
+                    <a href="img/cccwpbDirectoryForm.JPG" target="blank">
+                         <img class="preview" src="img/cccwpbDirectoryForm.JPG" alt="Self-service directory update form">
                     </a>
                </div>
-               <h3 class="caption">Administrative options and site updates with no programming knowledge required</h3>
-               <div class="section">
-                    <a href="https://www.dropbox.com/s/tuhbn3mum5yzf5i/IMG_0621.JPG?raw=1">
-                         <img class="preview" src="https://www.dropbox.com/s/tuhbn3mum5yzf5i/IMG_0621.JPG?raw=1" alt="Administrative access page">
-                    </a>
-               </div>
-               <h3 class="caption">Simple forms to instantly update site information</h3>
-               <div class="section">
-                    <a href="https://www.dropbox.com/s/4327zudpuhuwgdy/IMG_0623.JPG?raw=1">
-                         <img class="preview" src="https://www.dropbox.com/s/4327zudpuhuwgdy/IMG_0623.JPG?raw=1" alt="Example form for instant site updates">
+               <div class="section3">
+                    <h3 class="caption">Simple forms to instantly update site information</h3>
+                    <a href="img/cccwpbCalendarEvent.JPG" target="blank">
+                         <img class="preview" src="img/cccwpbCalendarEvent.JPG" alt="Example form for instant site updates">
                     </a>
                </div>
           </div>
+
+<!-- skillset segment -->
      <div id="skills">
           <h1 class="segment">Skillset</h1>
           <ul class="list1">
@@ -212,21 +205,29 @@
           <ul class="list2">
                <li>JavaScript</li>
                <li>jquery</li>
+               <li>React</li>
                <li>Git & GitHub</li>
-               <li>CodePen</li>
                <li>FlexBox</li>
           </ul>
           <ul class="list3">
+               <li>REST API Integration</li>
+               <li>ARIA Accessibility</li>
                <li>Responsive Web Design</li>
                <li>Advanced Nested Grids</li>
+               <li>Jasmine Testing Suite</li>
           </ul>
      </div>
+
+<!-- contact information -->
      <div id="contact">
           <h1 class="segment">Contact me</h1>
-          <a class="connect" href="http://www.linkedin.com/in/sallymorningstar">Visit me on&nbsp;<img src="Logo-2C-34px-R.png" alt="LinkedIn Logo"></a>
+          <a class="connect" href="http://www.linkedin.com/in/sallymorningstar">Visit me on&nbsp;<img src="img/Logo-2C-34px-R.png" alt="LinkedIn Logo"></a>
      </div>
 </div>
+
+<!-- JavaScript/jQuery source links -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="portfolio.js"></script>
+
 </body>
 </html>
