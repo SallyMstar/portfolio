@@ -1,0 +1,76 @@
+@media screen and (min-width: 600px) {
+   .profileInfo {
+         font-size: 20px;
+   }
+      .list1, .list2, .list3, .caption {
+          font-size: 18px;
+      }
+
+          .section {
+               text-align: center;
+               margin: 15px;
+               grid-column: span 3;
+               grid-row: span 4;
+               padding: 10px;
+               border-radius: 5px;
+               box-shadow: 0px 5px 15px;
+               background-color: #fffffc;
+          }
+
+          .section h4 {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+          .section1 {
+               text-align: center;
+               margin: 15px;
+               grid-column: span 3;
+               grid-row: span 4;
+               padding: 10px;
+               border-radius: 5px;
+               box-shadow: 0px 5px 15px;
+               background-color: #fffffc;
+               display: none;
+          }
+
+          .section2 {
+               text-align: center;
+               margin: 15px;
+               grid-column: span 3;
+               grid-row: span 4;
+               padding: 10px;
+               border-radius: 5px;
+               box-shadow: 0px 5px 15px;
+               background-color: #fffffc;
+               display: none;
+          }
+
+          .section3 {
+               text-align: center;
+               margin: 15px;
+               grid-column: span 3;
+               grid-row: span 4;
+               padding: 10px;
+               border-radius: 5px;
+               box-shadow: 0px 5px 15px;
+               background-color: #fffffc;
+               display: none;
+
+          }
+
+          .caption {
+                 font-size: 16px;
+                 margin: 10px;
+                 grid-column: span 3;
+                 grid-row: span 3;
+          }
+
+          .preview {
+               max-height: 200px;
+               max-width: 100%;
+               cursor: pointer;
+          }
+
+
+}

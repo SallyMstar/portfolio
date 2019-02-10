@@ -1,0 +1,116 @@
+@media screen and (min-width: 1100px) {
+    #container {
+         padding: 10px;
+         max-width: 900px;
+         margin: 85px 5px auto 190px;
+         background-color: #eeeeef;
+    }
+    #takeOut {
+         display: none;
+    }
+    #menu {
+         margin-top: 67px;
+         position: absolute;
+         position: fixed;
+         z-index: 3;
+    }
+    #menu li {
+         font-size: 16px;
+         max-width: 190px;
+         visibility: visible;
+         box-shadow: none;
+    }
+    .open {
+         position: absolute;
+         /* This trasform moves the drawer onto canvas. */
+         -webkit-transform: translate(0px, 0);
+         transform: translate(0px, 0);
+         /* Optionally, we animate the drawer. */
+         transition: transform 0.3s ease;
+    }
+    .closed {
+         position: absolute;
+         /* This trasform moves the drawer off canvas. */
+         -webkit-transform: translate(0px, 0);
+         transform: translate(0px, 0);
+         /* Optionally, we animate the drawer. */
+         transition: transform 0.3s ease;
+    }
+    .name {
+         font-size: 50px;
+         margin: 10px auto -10px auto;
+    }
+
+    .subject {
+         font-size: 20px;
+    }
+
+     .segment {
+          margin: 5px auto;
+     }
+
+    .section {
+         text-align: center;
+         margin: 15px;
+         grid-column: span auto;
+         grid-row: span 4;
+         padding: 10px;
+         border-radius: 5px;
+         box-shadow: 0px 5px 15px;
+         background-color: #fffffc;
+    }
+
+    .section1 {
+         text-align: center;
+         margin: 15px;
+         grid-column: span auto;
+         grid-row: span 4;
+         padding: 10px;
+         border-radius: 5px;
+         box-shadow: 0px 5px 15px;
+         background-color: #fffffc;
+         display: none;
+    }
+
+    .section h4 {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+
+    .section2 {
+         text-align: center;
+         margin: 15px;
+         grid-column: span auto;
+         grid-row: span 4;
+         padding: 10px;
+         border-radius: 5px;
+         box-shadow: 0px 5px 15px;
+         background-color: #fffffc;
+         display: none;
+    }
+
+    .section3 {
+         text-align: center;
+         margin: 15px;
+         grid-column: span auto;
+         grid-row: span 4;
+         padding: 10px;
+         border-radius: 5px;
+         box-shadow: 0px 5px 15px;
+         background-color: #fffffc;
+         display: none;
+    }
+
+    .caption {
+           margin: 10px;
+           grid-column: span 2;
+           grid-row: span 3;
+    }
+
+    .preview {
+         max-height: 300px;
+         max-width: 100%;
+    }
+}
